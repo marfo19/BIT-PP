@@ -28,29 +28,6 @@
 // Input: [ 13, 11, 15, 5, 6, 1, 8, 12 ]
 // Output: [ 2, 10, 12, 16, 22, 24, 26, 30 ]
 
-function sortAndMulti(array) {
-    var newArray = [];
-    var min = array[0];
-    var index = 0;
-
-    for (var i = 0; i < array.length; i++) {
-        for (var j = 0; j < array.length; j++) {
-            if (array[j] < min) {
-                min = array[j];
-                index = j;
-            }
-        }
-
-        newArray[i] = min * 2;
-        array[index] = Infinity;
-        min = Infinity;
-    }
-
-    return newArray;
-}
-
-console.log(sortAndMulti([13, 11, 15, 5, 6, 1, 8, 12]));
-
 // 5. (skip :))Sort a previously defined array in a descending order and display it in the
 // console.
 // Input: [ 13, 11, 15, 5, 6, 1, 8, 12 ]
@@ -71,31 +48,6 @@ console.log(sortAndMulti([13, 11, 15, 5, 6, 1, 8, 12]));
 // console.
 // Input: Belgrade Institute of Technology
 // Output: ygolonhceT fo etutitsnI edargleB
-
-function wordReverse(str) {
-    var i = str.length - 1;
-    var start,
-        end = i + 1;
-    var result = "";
-
-    while (i >= 0) {
-        if (str[i] == " ") {
-            start = i + 1;
-            while (start != end) result += str[start++];
-
-            result += " ";
-            end = i;
-        }
-        i--;
-    }
-    start = 0;
-
-    while (start != end) result += str[start++];
-
-    return result;
-}
-
-console.log(wordReverse("Belgrade Institute of Technology"));
 
 // 9. Write a program that displays all the combinations of two numbers between 1 and 7.
 // Don't display two of the same numbers at the same time. Display the number of possible

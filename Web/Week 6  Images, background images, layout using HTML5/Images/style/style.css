@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+#img1 {
+    display: block;
+    height: 200px;
+    float: right;
+}
+
+#img2 {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+#img3 {
+    height: 200px;
+    width: 200px;
+    float: left;
+    position: fixed;
+}
+
+body {
+    background-image: url(https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
